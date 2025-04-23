@@ -40,13 +40,15 @@ number of high and low frequency bats, and bat species recorded. Both of these c
 area boundary dataset, which is a shapefile containing the boundary of the East Troublesome fire. I also used SRTM elevation data which is a DEM with 30 arc sec resolution. 
 
 ### Methods
-difference between low frequency and high frequency bats
+difference between low frequency and high frequency bats - which are high and low frequency?
 occupancy modeling?
 
 What your methods are. Note that your code should be expressive to provide a good overview of your workflow -- you do not need to get into the nitty gritty details of the python steps that you applied.
   
 ### Results
-What you discovered about your topic  / question.
+What you discovered about your topic  / question. General 
+In the future - elevation, georeference longitude latitude, pyrodiversity
+make presentation
 
 <img 
   src="img/activityseverity.png" 
