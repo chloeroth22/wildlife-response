@@ -3,8 +3,12 @@
 The Rocky Mountain Research Center and the USDA are currently recording data on a study to determine the response to fire across species. They are studying three 2020 megafires in Colorado that burned over 230,000 hectares,
 where they have sampled 134 burned and unburned locations over the last 1.5 years, with varying burn severity. 
 
-BURN AREA IMAGE
+<img 
+  src="img/fire_locations.png" 
+  alt="Fire Locations" 
+  style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
+  
 They performed acoustic monitoring of birds and bats for 3 weeks at each location. Acoustic recording units were place on 2 meter PVC pipes
 and recorded birds for an hour before sunset and an hour after sunrise, and bats were recorded continuously from sunset to sunrise. Trail cameras were placed at each site to record non flying mammals. They aim to study the 
 changes in occupancy and biodiversity with variations in fire variables (fire severity and pyrodiversity), topology/elevation, pre-fire vegetation, and drought mortality. Learning the patterns of post-fire occupancy can 
