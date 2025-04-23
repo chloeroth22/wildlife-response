@@ -29,7 +29,10 @@ affected by the 2020 East Troublesome fire? My goal was to be able to determine 
 
 The data provided by the RMRC included 27 sites within or just outside the boundary of the East Troublesome fire that had recorded bat data. 
 
-BURN AREA PYTHON MAP
+<img 
+  src="img/et_boundary.png" 
+  alt="East Troublesome Boundary" 
+  style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 ### Data Sources
 My data sources included a site data csv that contained site information like longitude, latitude, and types of recordings pulled and a bat recording csv file containing site number, data, 
@@ -41,7 +44,32 @@ difference between low frequency and high frequency bats
 occupancy modeling?
 
 What your methods are. Note that your code should be expressive to provide a good overview of your workflow -- you do not need to get into the nitty gritty details of the python steps that you applied.
-
+  
 ### Results
 What you discovered about your topic  / question.
+
+<img 
+  src="img/activityseverity.png" 
+  alt="Bat Activity Versus Fire Severity" 
+  style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+  
+  <img 
+  src="img/hi_pass_predicted.png" 
+  alt="High Frequency Predictions" 
+  style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+  
+  <img 
+  src="img/hi_pass_table.png" 
+  alt="High Frequency Table" 
+  style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+  
+  <img 
+  src="img/lo_pass_predicted.png" 
+  alt="Low Frequency Predictions" 
+  style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+  
+  <img 
+  src="img/lo_pass_table.png" 
+  alt="Low Frequency Table" 
+  style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
