@@ -14,8 +14,9 @@ Similar work has been done studying the relationship between pyrodiversity and b
 burn extent, season of burn, and pyrodiversity. There has been some evidence showing that species richness increases in pyrodiverse areas - potentially due to a greater accessibility of foraging habitats and increased 
 habitat heterogeneity. Generally, bats show positive or neutral response to prescribed fire, and a negative, though sometimes short-lived, response to wildfire.
 
-(The effects of wildfire severity and pyrodiversity on bat occupancy and diversity in fire-suppressed forests)[https://www.nature.com/articles/s41598-019-52875-2]
-(Bats and fire: a global review)[https://research.fs.usda.gov/treesearch/63537]
+[The effects of wildfire severity and pyrodiversity on bat occupancy and diversity in fire-suppressed forests](https://www.nature.com/articles/s41598-019-52875-2)
+
+[Bats and fire: a global review](https://research.fs.usda.gov/treesearch/63537)
 
 ### Project
 
