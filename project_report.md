@@ -7,7 +7,7 @@ where they have sampled 134 burned and unburned locations over the last 1.5 year
   src="img/fire_locations.png" 
   alt="Fire Locations" 
   style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
-
+  Study Site Locations
   
 They performed acoustic monitoring of birds and bats for 3 weeks at each location. Acoustic recording units were place on 2 meter PVC pipes
 and recorded birds for an hour before sunset and an hour after sunrise, and bats were recorded continuously from sunset to sunrise. Trail cameras were placed at each site to record non flying mammals. They aim to study the 
@@ -33,45 +33,52 @@ The data provided by the RMRC included 27 sites within or just outside the bound
   src="img/et_boundary.png" 
   alt="East Troublesome Boundary" 
   style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
-
+  East Troublesome Fire Boundary
+  
 ### Data Sources
 My data sources included a site data csv that contained site information like longitude, latitude, and types of recordings pulled and a bat recording csv file containing site number, data, 
 number of high and low frequency bats, and bat species recorded. Both of these csvs had a temporal range of May to August 2024 and were provided by the RMRC. Additionally, I used a shapefile from the MTBS burned
 area boundary dataset, which is a shapefile containing the boundary of the East Troublesome fire. I also used SRTM elevation data which is a DEM with 30 arc sec resolution. 
 
 ### Methods
-difference between low frequency and high frequency bats - which are high and low frequency?
-occupancy modeling?
 
-What your methods are. Note that your code should be expressive to provide a good overview of your workflow -- you do not need to get into the nitty gritty details of the python steps that you applied.
+My methods began by downloading the MTBS boundary for the East Troublesome fire and creating a GeoPandas GeoDataFrame.
+
+Next I merged the two csv files together and only kept the columns that I was interested in, which was the site, latitude, longitude, bats recorded, and the fire severity. Bat recordings were separated into 'hi_pass' and 'lo_pass', which are simply the number of high frequency recordings and low frequency recordings caught by the audio equipment. These recordings are run through AI to determine the exact bat species - which few of the auto recordings are high enough quality to get an actual species identification from. The possible high frequency bat species include: Myyu, Myca, Myci, Myvo, Mylu, Pahe The possible low frequency bat species include: Anpa, Epfu, Lano, Coto, Myth, Tabr, Laci, Euma. However bats have a range of frequency and some have a range that include both high and low frequencies. The fire severity data is categorical data from 1 to 4, 1 being unburned and 4 being severly burned. I also made general formatting adjustments for workability of the DataFrame.
+
+Finally, I graphed the number of bat calls against the fire severity value and fit a Negative Binomial GLM to predict the bat activity based on fire severity.
   
 ### Results
-What you discovered about your topic  / question. General 
-In the future - elevation, georeference longitude latitude, pyrodiversity
-make presentation
+I discovered that there was possibly a small negative relationship between bat activity and fire severity. All of my p values are greater than 0.05 so I haven't found anything statistically significant, and my R values are low as well, probably due to limited study sites and other factors occurring. 
+
+In the future I plan to add in elevation and pyrodiversity. I also want to georeference my csv so that I can visualize my data spatially. It is also of note that I am using bat activity instead of bat occupancy, and I am considering doing a occupancy model and diving into more specific bat species present. 
 
 <img 
   src="img/activityseverity.png" 
   alt="Bat Activity Versus Fire Severity" 
   style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+  Box Plot of Bat Activity Versus Fire Severity
   
   <img 
   src="img/hi_pass_predicted.png" 
   alt="High Frequency Predictions" 
   style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
-  
+  Negative Binomial GLM High Frequency Predictions
+ 
   <img 
   src="img/hi_pass_table.png" 
   alt="High Frequency Table" 
   style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+  Negative Binomial GLM High Frequency Predictions Table
   
   <img 
   src="img/lo_pass_predicted.png" 
   alt="Low Frequency Predictions" 
   style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
-  
-  <img 
+  Negative Binomial GLM Low Frequency Predictions
+
+  <img
   src="img/lo_pass_table.png" 
   alt="Low Frequency Table" 
   style="max-width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
-
+  Negative Binomial GLM Low Frequency Predictions Table
